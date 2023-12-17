@@ -20,7 +20,7 @@ const BarChart = ({ analyticsData }) => {
 
   const setCanvasHeight = () => {
     if (chartContainer.current) {
-      chartContainer.current.height = isMobileView ? 300 : 150; 
+      chartContainer.current.height = isMobileView ? 300 : 250; 
     }
   };
 
@@ -65,7 +65,7 @@ const BarChart = ({ analyticsData }) => {
 
   return (
     <div className='m-10'>
-      <canvas ref={chartContainer} width={400} height={150} />
+      <canvas ref={chartContainer}/>
     </div>
   );
 };

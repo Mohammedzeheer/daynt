@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DOMPurify from 'dompurify';
 import { Axios } from '../api/axiosInstance';
+import { FaSearch } from "react-icons/fa";
 
 function TiniWiki() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -47,13 +48,16 @@ function TiniWiki() {
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="border border-gray-300 px-2 py-1 rounded-l w-full"
+            // className="border border-gray-300 px-2 py-1 rounded-l w-full"
+            className="border border-gray-300 px-2 py-1 rounded-l w-full focus:border-customBlue1 focus:outline-none"
+
           />
           <button
             onClick={handleSearch}
-            className="bg-blue-500 text-white px-4 py-1 rounded-r ml-1"
+            className="bg-customBlue1 hover:bg-blue-600 text-white px-4 py-1 rounded-r ml-1"
           >
-            Search
+            {/* Search */}
+            <FaSearch />
           </button>
         </div>
       </header>

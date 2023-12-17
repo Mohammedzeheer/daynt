@@ -13,7 +13,7 @@ module.exports = {
         customLightGreen: '#8be68b',
         customLighGreen:"#9bd4b8",
         customWatsapp: '#d9fdd3ff',
-       
+        customBlue1: '#3366cc',   
       }
     },
   },
