@@ -36,4 +36,4 @@ const slug = async (req, res) => {
   
 
 
-module.exports = {search,slug,analytics}
+module.exports = {search,slug}
