@@ -99,7 +99,7 @@ export default function Register() {
               <p className="mt-2 text-xs text-gray-600">
                 Have an account?
                 <span
-                  onClick={() => Navigate("/")}
+                  onClick={() => Navigate("/admin")}
                   className="text-sm cursor-pointer ml-1
                              no-underline text-blue-600"> Login
                 </span>
